@@ -1,0 +1,7 @@
+export(
+Kpart.knots,
+lm.Kpart,
+Kpart.plot,
+Kpart.example
+)
+exportPattern("^[[:alpha:]]+")
