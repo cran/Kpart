@@ -1,12 +1,5 @@
-757daad9f7ecd31ac213aa4f7a32b826 *DESCRIPTION
-682aa6143db5599c48a55c2c627a6f6d *NAMESPACE
-77f662926661ebeff90a3a1b413c7051 *R/Kpart.example.R
-54417a55a4b1fcf5648257776d504863 *R/Kpart.knots.R
-c11c45b66b5d93baaf3ba360327caba3 *R/Kpart.plot.R
-24632d59a6ce136f0cb6360d6e25dd29 *R/lm.Kpart.R
-9489e67ee4ef536779777b2ab4f2aecd *inst/extdata/example_data.txt
-7964959f7a09cc72b6bd015cba55342c *man/Kpart-package.Rd
-95f21b8d4f078bab3a39d96a1cc4cecf *man/Kpart.example.Rd
-2ddd746c19ad688a680126ca1c47bf8a *man/Kpart.knots.Rd
-2fd46e3f24d575946304fa11aa0de26a *man/Kpart.plot.Rd
-7b95d60a5b2862bd5d04d562695f8227 *man/lm.Kpart.Rd
+19b65b1c1a5b69e033431b670f6e5b29 *DESCRIPTION
+4cd666910889246d9e07da4b3190771c *NAMESPACE
+0a764c9f7562f3add3b291cde38eabe9 *R/part.R
+ccc6a91c391307eeda7d853ba2725a72 *man/Kpart-package.Rd
+ef5d3d8388525f32a4799bf9e08442d6 *man/part.Rd

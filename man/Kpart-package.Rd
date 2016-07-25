@@ -6,22 +6,30 @@
 Kpart
 }
 \description{
-Kpart spline fitting
+Cubic spline regression using the absolute maximum deviate to determine potential knots. This version also includes support for addidtional independednt variables to be included in the model.
 }
 \details{
 \tabular{ll}{
 Package: \tab Kpart\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
+Version: \tab 1.2\cr
 Date: \tab 2012-08-02\cr
 License: \tab Open Source\cr
 }
-~~ This package is intended for use with non-lineraly associated data. The function lm.Kpart firsts selects points for cubic spline knots using an alogorithm to find the abolute maximum deviate from the partiton mean, then fits a best fitting model by using the best subset method and minimum BIC. The function knots.Kpart returns the values selcted as knots in the model given by lm.Kpart, and plot.Kpart returns a plot with fitted values and vertical lines representing the spline points. Kpart(data,K) takes two arguments, data is a two column matrix where the first column is the repsonse and the second column is the predictor upon which knots are selected. K is a postive interger that indicates how many equally spaced partitions the user would like to produce.~~
+~~ This package is intended for use with non-lineraly associated data. The function part firsts selects points for cubic spline knots using an algorithm to find the abolute maximum deviate from the partiton mean, then fits a best fitting model by using the best subset method and maximum adjR2. The function returns the values selcted as knots in the model. The function part(d, outcomeVariable, splineTerm, additionalVars = NULL, K) takes five arguments. K is a postive interger that indicates how many equally spaced partitions the user would like to search.~~
+
+
+-- Recent update includes support for additional variables, 2016-07-23.  --
 }
 \author{
 Eric Golinko
 
 Maintainer: egolinko@gmail.com
 }
+\references{
+Based upon the thesis 'A min/max algorithm for cubic splines over k-partitions'
+http://fau.catalog.fcla.edu/fa.jsp?ix=pm&V=D&I=0&st=FA029952462
+}
+
 
 \keyword{ package }
