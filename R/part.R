@@ -16,16 +16,18 @@ part<-function(d, outcomeVariable, splineTerm, additionalVars = NULL, K){
 
   #Min/Max algorithm to find absolute maximum deviate in the kth partition
 
-  m <- matrix(nrow = K, ncol = 1)
-  for (k in 1:K)
-    m[k] <- max(abs(y[(L*(k-1)+1):(k*L)])-mean(y[(L*(k-1)+1):(k*L)]))
+  get_x <- function(k){
+    me <- mean(y[(L*(k-1)+1):(k*L)])
+    ym <- y[(L*(k-1)+1):(k*L)] - me
+    mc <- abs(max(ym))
+    l <- do.call('c',
+                 lapply(1:L, function(i)
+                   ifelse(ym[i] == mc, x[(L*(k-1)+1):(k*L)][i], 0)))
+    return(l[l!=0])}
 
-  W <- matrix(nrow=L, ncol=K)
-  for (l in 1:L)
-    for (k in 1:K)
-      W[l,k]=ifelse(m[k] != abs(y[(L*(k-1)+l)]-mean(y[(L*(k-1)+1):(k*L)])),
-                    0, x[(L*(k-1)+l)])
-  pops <- colSums(W)
+  pops <- do.call('c',
+                  lapply(1:K, function(i)
+                    get_x(i)))
 
   #matrix of potential spline knots
 

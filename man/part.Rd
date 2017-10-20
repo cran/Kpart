@@ -7,7 +7,7 @@ Fits a linear model based on spline terms with additional support for other inde
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
-The user will input a data frame, then designate the variable that is the outcome. Then the spline term is selected along with any other independent variables. Finally, a number K partitions is chosen for the alogirthim to search for potential cubic spline knots based on the spline term and partition.
+The user will input a data frame, then designate the variable that is the outcome. Then the spline term is selected along with any other independent variables. Finally, a number K partitions is chosen for the algorithm to search for potential cubic spline knots based on the spline term and partition.
 }
 \usage{
 part(d, outcomeVariable, splineTerm, additionalVars = NULL, K)
@@ -39,7 +39,7 @@ The number of evenly spaced partitions to be searched.
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
 \item{fits}{
-The fitted value of the linear model.
+The fitted values of the linear model.
 }
 \item{xhat}{
 The entire feature matrix.
