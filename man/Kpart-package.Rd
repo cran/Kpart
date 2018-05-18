@@ -12,7 +12,7 @@ Cubic spline regression using the absolute maximum deviate to determine potentia
 \tabular{ll}{
 Package: \tab Kpart\cr
 Type: \tab Package\cr
-Version: \tab 1.2\cr
+Version: \tab 1.2.2\cr
 Date: \tab 2012-08-02\cr
 License: \tab Open Source\cr
 }
@@ -27,8 +27,9 @@ Eric Golinko
 Maintainer: egolinko@gmail.com
 }
 \references{
-Based upon the thesis 'A min/max algorithm for cubic splines over k-partitions'
-http://fau.catalog.fcla.edu/fa.jsp?ix=pm&V=D&I=0&st=FA029952462
+Golinko, Eric David. A min/max algorithm for cubic splines over k-partitions. Florida Atlantic University, 2012.
+
+Golinko, Eric, and Lianfen Qian. "A Min. Max Algorithm for Spline Based Modeling of Violent Crime Rates in USA." arXiv preprint arXiv:1804.06806 (2018).
 }
 
 
